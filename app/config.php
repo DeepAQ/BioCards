@@ -2,9 +2,9 @@
 
 return [
     'db' => [
-        'dsn' => 'mysql:host=localhost;dbname=bestlang_test',
-        'user' => 'bestlang',
-        'pass' => 'BestLang'
+        'dsn' => 'sqlite:biocard.sqlite3',
+        'user' => '',
+        'pass' => ''
     ],
 
     'cache' => [

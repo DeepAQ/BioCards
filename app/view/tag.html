@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<style type="text/css">
+    .tag_img {
+        max-width: 100%;
+        max-height: 500px;
+    }
+</style>
+{% if nomore %}
+<div class="alert alert-success">
+    No more biocards needs to be tagged!
+</div>
+{% else %}
+<div class="row">
+    <div class="col-12 col-sm-4">
+        <img src="/cards/{{ filename }}" class="tag_img">
+    </div>
+    <div class="col-12 col-sm-8">
+        <h3>{{ filename }}</h3>
+        <form method="post" class="mt-3">
+            <input type="hidden" name="filename" value="{{ filename }}">
+            <div>
+                <input type="text" name="tags" class="form-control" placeholder="Tags ..." autofocus>
+            </div>
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="alert alert-primary mt-2">
+                {{ remain }} more biocards need to be tagged.
+            </div>
+        </form>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

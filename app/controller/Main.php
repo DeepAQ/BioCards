@@ -10,10 +10,4 @@ class Main extends BLController
     {
         return $this->view('index');
     }
-
-    public function phpinfo()
-    {
-        phpinfo();
-        return true;
-    }
 }
