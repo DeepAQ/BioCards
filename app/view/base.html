@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DeepAQ BioCard Management System</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">DeepAQ's BioCards</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Codename / Tag ...">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+</nav>
+
+<div class="mx-3 mx-md-5">
+    <main class="mt-3">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <hr>
+        <p>
+            &copy; DeepAQ 2017.
+            Proudly powered by <a href="https://packagist.org/packages/deepaq/bestlang">BestLang</a>.
+        </p>
+    </footer>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

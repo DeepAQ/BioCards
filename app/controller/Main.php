@@ -8,7 +8,7 @@ class Main extends BLController
 {
     public function index()
     {
-        return 'Hello BestLang!';
+        return $this->view('index');
     }
 
     public function phpinfo()
