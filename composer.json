@@ -1,0 +1,9 @@
+{
+  "name": "deepaq/bestlang-starter",
+  "description": "Starter kit for BestLang: Yet another PHP MVC framework",
+  "type": "project",
+  "homepage": "https://github.com/DeepAQ/BestLang-starter",
+  "require": {
+    "deepaq/bestlang": "dev-master"
+  }
+}

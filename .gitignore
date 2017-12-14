@@ -1,0 +1,7 @@
+### Composer template
+composer.phar
+composer.lock
+/vendor/
+
+/.idea/
+*.iml
