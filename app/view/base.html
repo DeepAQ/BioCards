@@ -8,14 +8,14 @@
 </head>
 <body>
 <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">DeepAQ's BioCards</a>
+    <a class="navbar-brand" href="/">DeepAQ's BioCards</a>
         <!--<ul class="navbar-nav mr-auto">-->
             <!--<li class="nav-item active">-->
                 <!--<a class="nav-link" href="#">Home</a>-->
             <!--</li>-->
         <!--</ul>-->
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="text" placeholder="Codename / Tag ...">
+        <form class="form-inline" action="/" method="get">
+            <input class="form-control mr-sm-2" type="text" name="kw" placeholder="Codename / Tag ...">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
 </nav>
@@ -29,8 +29,7 @@
     <footer>
         <hr>
         <p>
-            &copy; DeepAQ 2017.
-            Proudly powered by <a href="https://packagist.org/packages/deepaq/bestlang">BestLang</a>.
+            &copy; DeepAQ 2017. 技术构架 <a href="https://packagist.org/packages/deepaq/bestlang">BestLang</a>
         </p>
     </footer>
 </div>

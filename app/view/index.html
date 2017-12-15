@@ -1,4 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-Index
+<style type="text/css">
+    .index_img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+</style>
+<h3>{{ title }}</h3>
+<div class="row">
+    {% for card in cards %}
+    <div class="col-12 col-sm-4 col-md-3 col-lg-2 mt-3">
+        <img src="/cards/{{ card.data().filename }}" class="index_img">
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
