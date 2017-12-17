@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<style type="text/css">
+</style>
+<div>
+    <h3>Upload archive</h3>
+    <form method="post" enctype="multipart/form-data" class="mt-3">
+        <div>
+            <input type="file" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="/manage/tag">
+            <button class="btn">Tag</button>
+        </a>
+    </form>
+    {% if imported %}
+    <div class="alert alert-success mt-2">
+        {{ imported }} images have been imported.
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
